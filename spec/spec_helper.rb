@@ -2,6 +2,7 @@ ENV["SINATRA_ENV"] = "test"
 
 require_relative '../config/environment'
 require 'rack/test'
+#require 'database_cleaner/active_record'
 require 'database_cleaner'
 
 if ActiveRecord::Base.connection.migration_context.needs_migration?
